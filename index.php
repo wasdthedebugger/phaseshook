@@ -14,6 +14,7 @@ session_start();
     <meta name="theme-color" content="gray">
     <link rel="apple-touch-icon" href="icons/192.png">
     <link rel="manifest" href="manifest.json">
+    <link rel="icon" type="image/x-icon" href="/icons/192.png">
     <title>Home</title>
 </head>
 
