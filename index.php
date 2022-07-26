@@ -11,6 +11,9 @@ session_start();
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="gray">
+    <link rel="apple-touch-icon" href="icons/192.png">
+    <link rel="manifest" href="manifest.json">
     <title>Home</title>
 </head>
 
@@ -74,5 +77,15 @@ session_start();
     </footer>
 
 </body>
-
+<script>
+    if('serviceWorker' in navigator){
+        navigator.serviceWorker.register('sw.js').then(registration => {
+            console.log("SW Registered");
+            console.log(registration);
+        }).catch(error => {
+            console.log("SW Registration Failed");
+            console.log(error);
+        });
+    }
+</script>
 </html>
